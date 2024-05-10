@@ -1,0 +1,218 @@
+@font-face {
+    font-family: SF Pro Display ;
+    src: url(../fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+*{
+    box-sizing:border-box;
+    font-family:"SF Pro Display",Sf Pro Display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      
+    
+}
+body{
+    margin:0;
+    background-color:#000;
+    
+}
+.menu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+.menu nav{
+    display:flex;
+    align-items:center;
+    width:1275px;
+    justify-content:center;
+    height:44px;
+    
+}
+.menu ul{
+    display:flex;
+    justify-content:space-around;
+    padding-left:0;
+    align-items:center;
+}
+.menu li, .menu ul{
+    list-style: none;
+}
+.menu a{
+   text-decoration:none; 
+}
+.menu a :hover{
+    color:#efefef;
+   
+}
+.menu img{
+    opacity: 0.8;
+}
+.menu .hover :hover{
+    opacity:1;
+}
+
+.menu li{
+    padding-top:10px;
+    padding-left: 23px;
+    padding-right:23px;
+    color:#86868b;
+    font-size:15px;
+    white-space: nowrap;
+}
+
+.menu_icon, .menu_mobile{
+    padding-top:10px;
+    padding-left: 23px;
+    padding-right:23px;
+}
+.menu img{
+    width:16px;
+    
+}
+.menu .search{
+    width:17px;
+    margin-top:2px
+}
+.container{
+   
+    background-image: url(../images/ipad_1.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    height: 816px;
+    margin-top:87px;
+    flex-direction:column;
+    align-items:center;
+}
+.container .title{
+    display:flex;
+    flex-direction:column;
+   align-items:center;
+   padding-bottom:250px;
+}
+.container .title h1{
+    color:white;
+    font-size:80px;
+    margin:0px;
+}
+.title .thinpossible h1{
+    color:transparent;
+}
+.thinpossible{
+    background-image:linear-gradient(135deg, #fd3b18, #fac04c,#d2be84,#c8e7e5,#51a5d8,#0d4fc7);
+    background-clip:text
+    
+
+}
+
+.price, .available,.order_now{
+    color:#fff; 
+    display:flex;
+    justify-content:center;
+           
+}
+.price h2,.available h3{
+    font-size:25px;
+    margin:10px
+}
+.available h3{
+    color:#86868b
+}
+.order_now a{
+    margin-top:16px;
+    background-color:#0077ed;
+    padding:15px;
+    padding-left:30px; 
+    padding-right:30px;
+    border-radius:30px;
+    font-size:21px;
+    text-decoration:none;
+    color:#fff
+}
+.subtitle{
+    padding-top:60px;
+    padding-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    
+}
+.right{
+    display:flex;
+}
+.menu_mobile{
+    display:none;
+}
+.mm_line{
+    height:1px;
+    background-color:#bfbfbf;
+    width:16px;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+.mm_line :hover{
+    background-color:#efefef;
+    
+
+}
+@media (max-width:1235px){
+    .menu ul{
+        display:none;
+    }
+    .menu nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        
+    }
+    
+    .menu_mobile{
+        display:flex;
+        flex-direction:column;
+        padding-bottom:2px;
+        justify-content:center;
+    }
+    .menu img{
+        width:18px;
+        
+    }
+    .menu .search{
+        width:19px;
+        margin-top:3px
+    }
+    .container .title h1{
+        font-size:41px;
+    }
+    .container .subtitle .price h2,.container .subtitle .available h3{
+        font-size:16px;
+    }
+    .container .title{
+        padding-bottom:650px;
+        position: absolute;
+    }
+    .order_now a{
+        font-size:17px;
+    }
+    .container .subtitle{
+        padding-top:700px
+    }
+    .container{
+        background-image: url(../images/imagem_ipad_mobile.jpg);
+        background-size:550px;
+        background-position:center;
+        display:flex;
+        margin-top:0;
+        flex-direction:column;
+        align-items:center;
+        background-repeat:no-repeat;
+        height:800px;
+        
+        
+           
+    }
+    
+    
+}
